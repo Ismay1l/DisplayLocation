@@ -11,6 +11,7 @@
 		4B52AE2B2BF9884F000527BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52AE2A2BF9884F000527BF /* ContentView.swift */; };
 		4B52AE2D2BF98850000527BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B52AE2C2BF98850000527BF /* Assets.xcassets */; };
 		4B52AE302BF98850000527BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B52AE2F2BF98850000527BF /* Preview Assets.xcassets */; };
+		4B52AE372BF988CA000527BF /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52AE362BF988CA000527BF /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		4B52AE2A2BF9884F000527BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B52AE2C2BF98850000527BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B52AE2F2BF98850000527BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B52AE362BF988CA000527BF /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		4B52AE382BF98C75000527BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		4B52AE272BF9884F000527BF /* DisplayUserLocation */ = {
 			isa = PBXGroup;
 			children = (
+				4B52AE382BF98C75000527BF /* Info.plist */,
 				4B52AE282BF9884F000527BF /* DisplayUserLocationApp.swift */,
 				4B52AE2A2BF9884F000527BF /* ContentView.swift */,
 				4B52AE2C2BF98850000527BF /* Assets.xcassets */,
 				4B52AE2E2BF98850000527BF /* Preview Content */,
+				4B52AE362BF988CA000527BF /* MapViewModel.swift */,
 			);
 			path = DisplayUserLocation;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				4B52AE2B2BF9884F000527BF /* ContentView.swift in Sources */,
 				4B52AE292BF9884F000527BF /* DisplayUserLocationApp.swift in Sources */,
+				4B52AE372BF988CA000527BF /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,8 @@
 				DEVELOPMENT_TEAM = XKVWQB6CWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DisplayUserLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your application to show on the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +307,8 @@
 				DEVELOPMENT_TEAM = XKVWQB6CWU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DisplayUserLocation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your application to show on the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

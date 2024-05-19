@@ -6,16 +6,20 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
+    
+    @StateObject private var mapViewModel = MapViewModel()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Map(coordinateRegion:  $mapViewModel.region, showsUserLocation: true)
+            .accentColor(.pink)
+            .ignoresSafeArea()
+            .onAppear {
+                mapViewModel.checkIfLocationServicesEnabled()
+            }
     }
 }
 
